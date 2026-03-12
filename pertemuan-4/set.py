@@ -1,3 +1,4 @@
+#Set dalam bahasa Indonesia adalah “himpunan”, merupakan struktur data yang dapat memiliki satu atau lebih anggota didalamnya.
 #cara inisiasi set
 #1 (kurung kurawal )
 import sys
@@ -37,11 +38,13 @@ print(tokenword)
 setA: set[int] = {1, 2, 3, 4}
 setB: set[int] = {3, 4, 5, 6}
 
-#union
+#union(gabungan)
 print(setA|setB)
-#intersection
+#intersection(irisan)
 print(setA&setB)
-#difference
+#difference(selisih)
 print(setA-setB)
-#symmetric difference
+#symmetric difference(selisih simetris/beda setangkup)
 print(setA^setB)
+#cartesian product(hasil kali kartesius)
+print({(a, b) for a in setA for b in setB})
